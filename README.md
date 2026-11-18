@@ -35,6 +35,18 @@ Never put the token or API key in a file or a chat. They live only in Railway Va
 Change `WATCHLIST` in Railway (for example add `,ENVX:Enovix`) and add the stock and
 your thesis to `portfolio.md`.
 
+## Entry and exit rules
+Write them in `portfolio.md` under "My entry and exit rules", one line per rule with a
+code (A = add, X = exit, T = trim, P = position, R = review, W = warning), the threshold
+and the latest value. Copy the PLTR block for a new stock. The bot then:
+- adds an "Entry/exit rules" line to every urgent alert, naming the rules a headline touches;
+- in the weekly summary, shows each news item with how many entry (A) and exit (X, T)
+  conditions it triggers, naming them only when one is triggered; a price crossing one of
+  your levels gets its own line;
+- uses them when you ask a question.
+Update the "Latest" values after each earnings report so the starting point stays right.
+The bot reports rule status only. It never trades or tells you what to do.
+
 ## Costs (estimates, not measured)
 - Claude API: roughly $2-5 a month at about five questions a day. Hourly screening uses
   the cheapest model and only runs when there are new headlines.
