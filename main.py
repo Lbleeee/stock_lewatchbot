@@ -302,18 +302,25 @@ If nothing qualifies, reply {"alerts": []}"""
 
 SYSTEM_WEEKLY = """You write the weekly portfolio summary for one long-term investor (10+ year horizon), sent as a Telegram message.
 
-For each stock, in the order given, write:
-TICKER: price line as given
-News: the 1-3 developments that matter for the long term (skip price chatter and analyst targets). If nothing mattered, say "nothing material".
-Thesis: Intact, Watch, or At risk, with a one-line reason tied to each part of the investor's own written thesis for this stock. If their thesis is not written yet, say so and judge against the fundamentals instead.
-Rules: only if the investor has written entry and exit rules for this stock. Go through every rule by its code and give its status in a few words:
-  - Price rules (add levels, trim level): compare the price in the price line with each level and say Met or Not met, with the gap in percent. If the price is unavailable, say so.
-  - Business rules (retention, customers, margins, deal values and the like): say "No new data" unless a headline this week states a new value. If one does, compare it with the threshold and say Met, Not met, Moving toward triggered, or Triggered. Exit rules need 2 quarters in a row, so one quarter can only be "1 of 2 quarters".
-  - Use the "Latest" values in the investor's file as the starting point, and say when a status is carried over from them rather than from this week's news.
-  - If no rules are written for this stock, write "Rules: not written yet".
-Then one line: "Rule changes this week:" naming any rule whose status changed versus the investor's file, or "none".
+For each stock, in the order given, use exactly this layout and nothing else:
 
-End with "To check:" and up to 3 short items worth the investor's attention next week, only if the material supports them. Put any rule that is close to its threshold (within 10%) here.
+TICKER: price line as given
+Thesis: Intact, Watch or At risk - one short sentence tied to the investor's own written thesis for this stock (or "not written yet - judged on fundamentals").
+News:
+- one line per development that matters for the long term (1-3 lines; skip price chatter and analyst targets) - E/NE entry triggered, X/NX exit triggered
+  Entry triggered: CODE (a few words why)   <- only if E is above 0
+  Exit triggered: CODE (a few words why)    <- only if X is above 0
+  Review: CODE (a few words why)            <- only if the news touches a review or warning rule (R, W or P codes)
+
+How to fill it in:
+- Entry conditions are the investor's add rules (codes starting with A). Exit conditions are their exit and trim rules (codes starting with X or T). NE and NX are how many of each the investor has written for this stock; count them from their file.
+- E and X count only the conditions that THIS news item triggers, judged from what the headline states. Exit rules need 2 quarters in a row, so a single quarter's figure cannot trigger one; mention it on a Review line instead.
+- If the price in the price line crosses one of the investor's price levels (add levels or trim level), add a line for it in the same format, starting with "- Price", and count it like a news item.
+- If nothing material happened, write one line: "- Nothing material - 0/NE entry triggered, 0/NX exit triggered".
+- If the investor has no entry or exit rules for this stock, drop the counts and write "(no rules written)" after each news line.
+- Keep each news line to one sentence. Do not list rules that were not triggered.
+
+End the whole message with "To check:" and up to 3 short items for next week, only if the material supports them.
 
 Rules:
 - The investor decides. Report the status of their own rules; do not tell them to buy, sell or resize a position.
@@ -619,6 +626,9 @@ def main():
     log.info("Starting. Watching %s. Owner chat set: %s", ", ".join(WATCHLIST), bool(ALLOWED_CHAT_ID))
     build_app().run_polling(allowed_updates=Update.ALL_TYPES)
 
+
+if __name__ == "__main__":
+    main()
 
 if __name__ == "__main__":
     main()
