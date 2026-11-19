@@ -26,7 +26,7 @@ The thesis for each stock, the growth rates in my DCF, the discount-rate sign-of
 ## My theses (I write these; 1-2 lines each)
 - AVGO: I hold AVGO as long as it stays the main design partner for custom AI chips (keeps its big customers through each new generation) and the leading AI networking supplier, its AI revenue keeps growing toward management's targets, and its customers can fund their commitments, at a price that still makes sense. I review after each earnings report and act on 2-quarter trends.
 - PLTR: I hold PLTR as long as it keeps its lead as the operating layer for enterprise AI (high net retention), keeps adding new customers at a strong pace, and maintains its margins, at a valuation that still makes sense. I review after each earnings report and act on 2-quarter trends.
-- NVDA: not written yet
+- NVDA: I hold NVDA as long as it stays the default platform for AI computing (customers keep buying its full system of chips, networking and software), its revenue keeps growing with AI spending even as custom chips take part of the inference market, gross margins hold at 70% or above, and the new leadership keeps the yearly product cadence on track, at a price that still makes sense. I review after each earnings report and act on 2-quarter trends.
 - AMZN: I hold AMZN as long as its AI build-out (~$220B+ a year of capex) keeps turning into fast AWS growth (around 40%) at healthy margins (35%+), free cash flow recovers as capex growth slows, and retail and ads keep growing their profits, at a price that still makes sense. I review after each earnings report and act on 2-quarter trends.
 
 ## My entry and exit rules (I set these; the bot reports their status, it never acts on them)
@@ -97,12 +97,31 @@ Warnings to watch:
 - W2 AWS backlog falling quarter on quarter. Latest: $578B.
 - W3 AWS losing cloud share. Latest: about 26% (Synergy), down from 28-32% in 2025.
 
-### NVDA
-Not written yet.
+### NVDA (set Nov 19, 2026; latest values from Q3 fiscal 2027, reported Nov 17; Q4 due late Feb 2027)
+Add (all four must hold):
+- A1 Platform lead: data center revenue growing 40%+ a year and guidance met or beaten. Latest: $107.6B, +110%; Q3 beat; Q4 guide $130B. Met.
+- A2 Margins: gross margin 70%+. Latest: 74.8% (Q4 guided 71-72%). Met.
+- A3 Leadership on track: yearly product cadence on schedule, no adverse finding from the board investigation, permanent CEO search progressing. Latest: Vera Rubin NVL72 shipped; interim CEO Colette Kress (also CFO); no permanent CEO. Partly met.
+- A4 Price: add 10% at or below $198 (base DCF value); add 25% at or below $158; add 50% at or below $132. Latest price: $150.96 (Nov 18). Met for the 25% level.
+Full exit (thesis broken):
+- X1 Gross margin below 70% for 2 quarters.
+- X2 Data center revenue growth below 20% a year for 2 quarters.
+- X3 The next chip generation is delayed 2+ quarters, or a wave of senior engineers leaves. This is an event: no 2-quarter wait.
+- X4 A major AI lab or hyperscaler moves frontier-model training mostly off Nvidia. This is an event: no 2-quarter wait.
+Trim (business fine, price stretched):
+- T1 Price above $268 (Monte Carlo 90th percentile) with no matching jump in growth. Latest: $150.96. Not triggered.
+Position size:
+- P1 Investment policy flag: above 30% of the portfolio. Latest: 18.97%. OK.
+Immediate review (not an exit by itself):
+- R1 Board investigation findings about Jensen Huang; a permanent CEO named; new export limits; any cut to the 2027 capex plans of Amazon, Microsoft, Alphabet or Meta.
+Warnings to watch:
+- W1 Gross margin trend. Latest: 74.8%, guided 71-72% for Q4 because of memory costs.
+- W2 Hyperscalers' share of data center revenue. Latest: slightly over 50%.
+- W3 Custom chips taking inference work (Broadcom, Google TPU, Amazon Trainium).
 
 ## Research snapshot (goes out of date; update after each earnings report)
 - AVGO, DCF of Nov 13, 2026: optimistic $732, base $383, pessimistic $163 per share, at a 10.95% discount rate. Base case assumes management's AI revenue outlook of about $115B in fiscal 2027 and $230B in fiscal 2028 is met. Monte Carlo median about $364; at the $341.60 price (Nov 17) about 60% chance the value is above the price. Risk score 2.29 of 5 (lower risk); highest risks are industry and external (AI spending cycle, all chips made by TSMC in Taiwan) and customer concentration (about six customers; about $72B of customer financing guarantees). Next results Dec 9, 2026; Q4 guide: revenue about $34.8B, AI revenue about $21.7B.
-- NVDA, DCF of Nov 12, 2026: optimistic $407, base $195, pessimistic $84 per share, at a 14.3% discount rate. Base case assumes 2030 data-center capex of $2.5T and a 40% Nvidia share. Results due Nov 17, 2026.
+- NVDA, DCF updated Nov 19, 2026 for Q3 fiscal 2027: optimistic $411, base $198, pessimistic $86 per share, at a 14.31% discount rate. Base case assumes 2030 data-center capex of $2.5T and a 40% Nvidia share. Monte Carlo median about $196; at $150.96 about 82% chance the value is above the price. The model does not include leadership risk (Jensen Huang resigned Nov 12) or the falling margin guide. Risk score 2.21 of 5; highest risks are industry and external (AI capex cycle, China rules, TSMC) and governance (5 of 5). Next results late Feb 2027; Q4 guide: revenue $130B, gross margin 71-72%.
 - AMZN, DCF on normalized earnings: optimistic $443, base $300, pessimistic $169 per share, at a 10.46% discount rate (EPS growth 30% / 23% / 13% for years 1-5). Monte Carlo (rebuilt Nov 18) median about $286; at $267.74 about 64% chance the value is above the price. The price implies about 20% EPS growth a year for 5 years. Risk score 2.46 of 5; highest risks are industry and external (FTC trial early 2027, AI capex cycle) and operations (about $220B capex, free cash flow -$42.4B). Next results about Feb 4, 2027; Q4 guide: sales $240-247B, operating income $28.5-33.5B.
 - PLTR, DCF of Nov 17, 2026: optimistic $314, base $124, pessimistic $37 per share, at an 11.73% discount rate (beta 1.62, 2,409M shares). Monte Carlo median about $114; about 14% chance the value is above the $160.39 price. The price implies about 37% free cash flow growth a year for 5 years (about $40B of revenue in 2031). Risk score 2.50 of 5 (medium); highest risk is valuation. Next results early February 2027; Q4 guide: revenue $2.649-2.653B.
 
