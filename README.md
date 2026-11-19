@@ -17,7 +17,7 @@ summary, and answers your questions. It never trades and never tells you to buy 
 | `ANTHROPIC_API_KEY` | yes | | Key from console.anthropic.com |
 | `ALLOWED_CHAT_ID` | yes (step 4) | | Your chat ID. The bot ignores everyone else |
 | `WATCHLIST` | no | `AVGO:Broadcom,PLTR:Palantir,NVDA:Nvidia,AMZN:Amazon` | Stocks to follow, as `TICKER:Name` |
-| `SCAN_MINUTES` | no | `60` | Minutes between news checks |
+| `SCAN_MINUTES` | no | `180` | Minutes between news checks (180 = every 3 hours) |
 | `WEEKLY_DAY` / `WEEKLY_HOUR` | no | `0` / `18` | Weekly summary: 0 = Sunday, 18 = 6pm |
 | `TIMEZONE` | no | `America/Toronto` | |
 | `MAX_CLAUDE_CALLS_PER_DAY` | no | `80` | Safety cap on spend |
@@ -30,6 +30,17 @@ Never put the token or API key in a file or a chat. They live only in Railway Va
 ## Commands
 `/status` what it's watching · `/scan` check news now · `/weekly` summary now ·
 `/news TICKER` latest headlines · `/help` · or just type a question.
+
+## How the news filter works
+Every 3 hours the bot collects new headlines and runs them through two steps:
+1. **Sort (cheap model):** each headline is dropped (price moves, analyst targets, opinion pieces),
+   kept for the weekly summary (real news that doesn't touch your thesis or rules), or sent to step 2.
+2. **Check (smarter model):** reads your thesis and entry/exit rules and alerts you only if the news
+   materially strengthens or weakens part of your thesis, triggers or moves toward an A, X or T rule,
+   or is one of your R (review) events. Anything that doesn't pass goes to the weekly summary instead.
+
+If step 2 fails, you still get the alert, marked "unverified". `/status` shows how many items are
+waiting for the weekly summary. The kept list is cleared after each weekly summary is sent.
 
 ## Adding a stock
 Change `WATCHLIST` in Railway (for example add `,ENVX:Enovix`) and add the stock and
