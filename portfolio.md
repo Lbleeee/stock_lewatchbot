@@ -75,7 +75,25 @@ Warnings to watch:
 - W2 Fiscal 2027 AI outlook (about $115B) cut or fiscal 2028 (about $230B) withdrawn.
 - W3 Free cash flow margin below 40%. Latest: 46%.
 
-### NVDA, AMZN
+**###AMZN (set Nov 18, 2026; latest values from Q3 2026, reported Oct 29; Q4 due about Feb 4, 2027)**
+
+Add (all four must hold):
+
+A1 AWS growth: AWS revenue growing 40%+ a year. Latest: 39.3% (6th straight quarter of acceleration; guided above 40% in 2027 and 2028). Not met, 0.7 points short.
+A2 AWS margin: AWS operating margin 35%+. Latest: 38.7%. Met.
+A3 Cash flow turning: free cash flow (12 months) improving toward positive as capex growth slows. Latest: -$42.4B (was +$14.8B a year ago). Not met.
+A4 Price: add 10% at or below $300 (base DCF value); add 25% at or below $240; add 50% at or below $200. Latest price: $267.74 (Nov 18). Met for the 10% level. Full exit (thesis broken):
+X1 AWS growth below 30% for 2 quarters while capex keeps rising.
+X2 AWS operating margin below 30% for 2 quarters as depreciation rises.
+X3 The FTC trial forces a break-up or major remedies. This is an event: no 2-quarter wait.
+X4 Anthropic or OpenAI cuts its AWS commitment materially. This is an event: no 2-quarter wait. Trim (business fine, price stretched):
+T1 Price above $359 (Monte Carlo 90th percentile) with no matching jump in growth. Latest: $267.74, about 25% below. Not triggered. Position size:
+P1 Investment policy flag: above 30% of the portfolio. Latest: 11.51%. OK. Immediate review (not an exit by itself):
+R1 Andy Jassy or Matt Garman leaving; Anthropic IPO and the value of Amazon's stake; Trainium external chip sales starting (positive); the 2027 capex guide (Feb 2027); the FTC trial starting. Warnings to watch:
+W1 Free cash flow getting more negative for 2 quarters. Latest: -$42.4B.
+W2 AWS backlog falling quarter on quarter. Latest: $578B.
+W3 AWS losing cloud share. Latest: about 26% (Synergy), down from 28-32% in 2025.
+### NVDA
 Not written yet.
 
 ## Research snapshot (goes out of date; update after each earnings report)
