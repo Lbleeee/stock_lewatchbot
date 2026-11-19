@@ -27,7 +27,7 @@ The thesis for each stock, the growth rates in my DCF, the discount-rate sign-of
 - AVGO: I hold AVGO as long as it stays the main design partner for custom AI chips (keeps its big customers through each new generation) and the leading AI networking supplier, its AI revenue keeps growing toward management's targets, and its customers can fund their commitments, at a price that still makes sense. I review after each earnings report and act on 2-quarter trends.
 - PLTR: I hold PLTR as long as it keeps its lead as the operating layer for enterprise AI (high net retention), keeps adding new customers at a strong pace, and maintains its margins, at a valuation that still makes sense. I review after each earnings report and act on 2-quarter trends.
 - NVDA: not written yet
-- AMZN: not written yet
+- AMZN: I hold AMZN as long as its AI build-out (~$220B+ a year of capex) keeps turning into fast AWS growth (around 40%) at healthy margins (35%+), free cash flow recovers as capex growth slows, and retail and ads keep growing their profits, at a price that still makes sense. I review after each earnings report and act on 2-quarter trends.
 
 ## My entry and exit rules (I set these; the bot reports their status, it never acts on them)
 Each rule has a metric, a threshold and the latest value. "2 quarters" means two reported quarters in a row, not one.
