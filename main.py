@@ -1,19 +1,3 @@
-"""
-Investment news bot for Telegram.
-
-What it does
-  1. Scans free news feeds for your stocks (every hour by default) and messages
-     you ONLY when a headline reports a fundamental event: strategy or business
-     model change, management change, insider dealing, key customer, guidance...
-  2. Sends a weekly summary with a thesis status for each stock.
-  3. Answers your questions, grounded in portfolio.md (or your Google Sheet tab).
-
-It never trades and never tells you to buy or sell. Decisions stay with you.
-
-All settings come from environment variables (Railway > your service > Variables).
-Only two are required: TELEGRAM_BOT_TOKEN and ANTHROPIC_API_KEY.
-"""
-
 import calendar
 import csv
 import hashlib
