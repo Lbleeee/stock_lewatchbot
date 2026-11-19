@@ -75,24 +75,27 @@ Warnings to watch:
 - W2 Fiscal 2027 AI outlook (about $115B) cut or fiscal 2028 (about $230B) withdrawn.
 - W3 Free cash flow margin below 40%. Latest: 46%.
 
-###AMZN (set Nov 18, 2026; latest values from Q3 2026, reported Oct 29; Q4 due about Feb 4, 2027)
-
+### AMZN (set Nov 18, 2026; latest values from Q3 2026, reported Oct 29; Q4 due about Feb 4, 2027)
 Add (all four must hold):
-
-A1 AWS growth: AWS revenue growing 40%+ a year. Latest: 39.3% (6th straight quarter of acceleration; guided above 40% in 2027 and 2028). Not met, 0.7 points short.
-A2 AWS margin: AWS operating margin 35%+. Latest: 38.7%. Met.
-A3 Cash flow turning: free cash flow (12 months) improving toward positive as capex growth slows. Latest: -$42.4B (was +$14.8B a year ago). Not met.
-A4 Price: add 10% at or below $300 (base DCF value); add 25% at or below $240; add 50% at or below $200. Latest price: $267.74 (Nov 18). Met for the 10% level. Full exit (thesis broken):
-X1 AWS growth below 30% for 2 quarters while capex keeps rising.
-X2 AWS operating margin below 30% for 2 quarters as depreciation rises.
-X3 The FTC trial forces a break-up or major remedies. This is an event: no 2-quarter wait.
-X4 Anthropic or OpenAI cuts its AWS commitment materially. This is an event: no 2-quarter wait. Trim (business fine, price stretched):
-T1 Price above $359 (Monte Carlo 90th percentile) with no matching jump in growth. Latest: $267.74, about 25% below. Not triggered. Position size:
-P1 Investment policy flag: above 30% of the portfolio. Latest: 11.51%. OK. Immediate review (not an exit by itself):
-R1 Andy Jassy or Matt Garman leaving; Anthropic IPO and the value of Amazon's stake; Trainium external chip sales starting (positive); the 2027 capex guide (Feb 2027); the FTC trial starting. Warnings to watch:
-W1 Free cash flow getting more negative for 2 quarters. Latest: -$42.4B.
-W2 AWS backlog falling quarter on quarter. Latest: $578B.
-W3 AWS losing cloud share. Latest: about 26% (Synergy), down from 28-32% in 2025.
+- A1 AWS growth: AWS revenue growing 40%+ a year. Latest: 39.3% (6th straight quarter of acceleration; guided above 40% in 2027 and 2028). Not met, 0.7 points short.
+- A2 AWS margin: AWS operating margin 35%+. Latest: 38.7%. Met.
+- A3 Cash flow turning: free cash flow (12 months) improving toward positive as capex growth slows. Latest: -$42.4B (was +$14.8B a year ago). Not met.
+- A4 Price: add 10% at or below $300 (base DCF value); add 25% at or below $240; add 50% at or below $200. Latest price: $267.74 (Nov 18). Met for the 10% level.
+Full exit (thesis broken):
+- X1 AWS growth below 30% for 2 quarters while capex keeps rising.
+- X2 AWS operating margin below 30% for 2 quarters as depreciation rises.
+- X3 The FTC trial forces a break-up or major remedies. This is an event: no 2-quarter wait.
+- X4 Anthropic or OpenAI cuts its AWS commitment materially. This is an event: no 2-quarter wait.
+Trim (business fine, price stretched):
+- T1 Price above $359 (Monte Carlo 90th percentile) with no matching jump in growth. Latest: $267.74, about 25% below. Not triggered.
+Position size:
+- P1 Investment policy flag: above 30% of the portfolio. Latest: 11.51%. OK.
+Immediate review (not an exit by itself):
+- R1 Andy Jassy or Matt Garman leaving; Anthropic IPO and the value of Amazon's stake; Trainium external chip sales starting (positive); the 2027 capex guide (Feb 2027); the FTC trial starting.
+Warnings to watch:
+- W1 Free cash flow getting more negative for 2 quarters. Latest: -$42.4B.
+- W2 AWS backlog falling quarter on quarter. Latest: $578B.
+- W3 AWS losing cloud share. Latest: about 26% (Synergy), down from 28-32% in 2025.
 
 ### NVDA
 Not written yet.
@@ -100,7 +103,7 @@ Not written yet.
 ## Research snapshot (goes out of date; update after each earnings report)
 - AVGO, DCF of Nov 13, 2026: optimistic $732, base $383, pessimistic $163 per share, at a 10.95% discount rate. Base case assumes management's AI revenue outlook of about $115B in fiscal 2027 and $230B in fiscal 2028 is met. Monte Carlo median about $364; at the $341.60 price (Nov 17) about 60% chance the value is above the price. Risk score 2.29 of 5 (lower risk); highest risks are industry and external (AI spending cycle, all chips made by TSMC in Taiwan) and customer concentration (about six customers; about $72B of customer financing guarantees). Next results Dec 9, 2026; Q4 guide: revenue about $34.8B, AI revenue about $21.7B.
 - NVDA, DCF of Nov 12, 2026: optimistic $407, base $195, pessimistic $84 per share, at a 14.3% discount rate. Base case assumes 2030 data-center capex of $2.5T and a 40% Nvidia share. Results due Nov 17, 2026.
-- AMZN: research report done Nov 2026 (AWS and AI data-center build-out); no current DCF values.
+- AMZN, DCF on normalized earnings: optimistic $443, base $300, pessimistic $169 per share, at a 10.46% discount rate (EPS growth 30% / 23% / 13% for years 1-5). Monte Carlo (rebuilt Nov 18) median about $286; at $267.74 about 64% chance the value is above the price. The price implies about 20% EPS growth a year for 5 years. Risk score 2.46 of 5; highest risks are industry and external (FTC trial early 2027, AI capex cycle) and operations (about $220B capex, free cash flow -$42.4B). Next results about Feb 4, 2027; Q4 guide: sales $240-247B, operating income $28.5-33.5B.
 - PLTR, DCF of Nov 17, 2026: optimistic $314, base $124, pessimistic $37 per share, at an 11.73% discount rate (beta 1.62, 2,409M shares). Monte Carlo median about $114; about 14% chance the value is above the $160.39 price. The price implies about 37% free cash flow growth a year for 5 years (about $40B of revenue in 2031). Risk score 2.50 of 5 (medium); highest risk is valuation. Next results early February 2027; Q4 guide: revenue $2.649-2.653B.
 
 ## What counts as urgent
