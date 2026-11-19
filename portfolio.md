@@ -75,7 +75,7 @@ Warnings to watch:
 - W2 Fiscal 2027 AI outlook (about $115B) cut or fiscal 2028 (about $230B) withdrawn.
 - W3 Free cash flow margin below 40%. Latest: 46%.
 
-**###AMZN (set Nov 18, 2026; latest values from Q3 2026, reported Oct 29; Q4 due about Feb 4, 2027)**
+###AMZN (set Nov 18, 2026; latest values from Q3 2026, reported Oct 29; Q4 due about Feb 4, 2027)
 
 Add (all four must hold):
 
@@ -93,6 +93,7 @@ R1 Andy Jassy or Matt Garman leaving; Anthropic IPO and the value of Amazon's st
 W1 Free cash flow getting more negative for 2 quarters. Latest: -$42.4B.
 W2 AWS backlog falling quarter on quarter. Latest: $578B.
 W3 AWS losing cloud share. Latest: about 26% (Synergy), down from 28-32% in 2025.
+
 ### NVDA
 Not written yet.
 
