@@ -58,6 +58,20 @@ and the latest value. Copy the PLTR block for a new stock. The bot then:
 Update the "Latest" values after each earnings report so the starting point stays right.
 The bot reports rule status only. It never trades or tells you what to do.
 
+## Costs (estimates, not measured)
+- Claude API: roughly $2-5 a month at about five questions a day. Hourly screening uses
+  the cheapest model and only runs when there are new headlines.
+- Railway: free 30-day trial, then about $1-5 a month depending on plan.
+- Set a monthly spend limit in the Claude Console as a backstop.
+
+## Optional: read your theses from the Google Sheet
+1. In the Investments sheet: File > Share > Publish to web.
+2. Choose the **Investment policy** tab only and **Comma-separated values (.csv)**. Publish.
+3. Copy the link into Railway as `SHEET_CSV_URL`.
+
+Anyone who has that link can read that one tab (the link is long and hard to guess, and
+the tab holds percentages, not account values). If you prefer nothing published, skip
+this and keep `portfolio.md` up to date instead.
 
 ## Limits to know
 - Alerts are judged from **headlines only**. Always read the linked source.
@@ -72,3 +86,9 @@ The bot reports rule status only. It never trades or tells you what to do.
 - "Conflict" errors in the log: two copies are running with the same token. Keep one.
 - Replies only with your chat ID: `ALLOWED_CHAT_ID` is not set yet.
 - `/news AVGO` shows nothing: the host can't reach the news feeds; check the logs.
+
+## Message layout (v1.5, Nov 27, 2026)
+- Weekly summary: an "At a glance" list first (🟢 nothing triggered, 🟡 review or warning, 🔴 exit triggered, 💰 price at an add level), then one card per stock. Your thesis sits in a tap-to-expand box; each news item still shows its entry/exit counts and any triggered codes.
+- Claude now returns the weekly facts as data and the bot draws the layout, so it looks the same every week. If that data can't be read, the bot falls back to the previous plain layout automatically.
+- Urgent alerts use the same style (🚨 header, thesis impact, rule effect, source links).
+- If Telegram ever rejects the formatting, the message is sent as plain text instead, so nothing is lost.
